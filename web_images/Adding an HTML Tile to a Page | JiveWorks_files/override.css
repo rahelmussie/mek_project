@@ -1,0 +1,1435 @@
+@font-face{
+    font-family:"Avenir Next W01 Thin";
+    src:url("../fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix");
+    src:url("../fonts/42c793cf-df5a-4e07-bf3e-37de54df02b6.eot?#iefix") format("eot"),url("../fonts/64779e28-a3b8-4364-949c-771372a0a327.woff2") format("woff2"),url("../fonts/c6c8e4be-17eb-4475-bbfc-bb485ffde766.woff") format("woff"),url("../fonts/87a872d0-5af3-4231-a77c-37f41ec74662.ttf") format("truetype"),url("../fonts/91464696-717b-4eaa-adbd-0dfc5e5fd782.svg?123#91464696-717b-4eaa-adbd-0dfc5e5fd782") format("svg?123");
+}
+@font-face{
+    font-family:"AvenirNextLTW01-Regular";
+    src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix");
+    src:url("../fonts/e9167238-3b3f-4813-a04a-a384394eed42.eot?#iefix") format("eot"),url("../fonts/2cd55546-ec00-4af9-aeca-4a3cd186da53.woff2") format("woff2"),url("../fonts/1e9892c0-6927-4412-9874-1b82801ba47a.woff") format("woff"),url("../fonts/46cf1067-688d-4aab-b0f7-bd942af6efd8.ttf") format("truetype"),url("../fonts/52a192b1-bea5-4b48-879f-107f009b666f.svg?123#52a192b1-bea5-4b48-879f-107f009b666f") format("svg?123");
+}
+@font-face{
+    font-family:"AvenirNextLTW01-Medium";
+    src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix");
+    src:url("../fonts/1a7c9181-cd24-4943-a9d9-d033189524e0.eot?#iefix") format("eot"),url("../fonts/627fbb5a-3bae-4cd9-b617-2f923e29d55e.woff2") format("woff2"),url("../fonts/f26faddb-86cc-4477-a253-1e1287684336.woff") format("woff"),url("../fonts/63a74598-733c-4d0c-bd91-b01bffcd6e69.ttf") format("truetype"),url("../fonts/a89d6ad1-a04f-4a8f-b140-e55478dbea80.svg?123#a89d6ad1-a04f-4a8f-b140-e55478dbea80") format("svg?123");
+}
+@font-face{
+    font-family:"Avenir Next LT W01 Bold";
+    src:url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix");
+    src:url("../fonts/dccb10af-07a2-404c-bfc7-7750e2716bc1.eot?#iefix") format("eot"),url("../fonts/14c73713-e4df-4dba-933b-057feeac8dd1.woff2") format("woff2"),url("../fonts/b8e906a1-f5e8-4bf1-8e80-82c646ca4d5f.woff") format("woff"),url("../fonts/890bd988-5306-43ff-bd4b-922bc5ebdeb4.ttf") format("truetype"),url("../fonts/ed104d8c-7f39-4e8b-90a9-4076be06b857.svg?123#ed104d8c-7f39-4e8b-90a9-4076be06b857") format("svg?123");
+}
+
+
+/*Global restyling*/
+    /*body*/
+    body.j-body-welcome.j-body-home.j-header-mode-custom {
+        background-color: #ececec !important;
+        font-size: 1em;
+        z-index: 1;
+    }
+    body.j-body-welcome.j-body-home.j-header-mode-custom #j-main,
+    body.j-body-welcome.j-body-home #j-main{
+        max-width: 1098px;
+    }
+    #j-main {
+        padding: 30px 40px 20px;
+    }
+    /*header*/
+    #j-satNav li a, #j-satNav .j-user-name {
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 19px;
+    }
+    *#j-cust-head *#ext-nav {
+        background: #1e1e1e;
+    }
+    *#j-cust-head ul#ext-nav li:first-child + li a {
+        background-color: #2e2e2e;
+        text-decoration: none;
+    }
+    *#j-cust-head *#ext-nav li a:hover {
+        background-color:  #313131;
+    }
+    *#j-cust-head *#ext-nav li {
+        font-family: "AvenirNextLTW01-Regular";
+        border-right: none;
+    }
+    *#j-cust-head *#ext-nav li#contact{
+        border-left: none;
+    }
+    *#j-cust-head *#logo {
+        display: inline-block;
+        z-index: 20;
+        padding: 0;
+        margin-left: 25px;
+        position: absolute;
+        /*height: 111px;*/
+        background-size: cover;
+        text-align: center;
+    }
+    #j-header, #j-compact-header {
+        background-color: #5a2bac;
+        background-image: url(../images/header-bg-unit.png);
+        background-position: right top;
+        background-repeat: repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        height: 120px;
+        width: 100%;
+    }
+    *#j-cust-head *#logo {
+        /*height: 88px;*/
+    }
+    .j-globalNavLink {
+        padding: 6px 10px 0;
+    }
+    #j-globalNav-bg{
+        height: 46px;
+        padding: 22px 20px 0 198px;
+    }
+    #j-compact-header li#jive-nav-link-home a.j-globalNavLink {
+        display: none;
+    }
+
+    #j-links #j-satNav-indicator .j-update-count {
+        left: -40px;
+        top: 6px;
+    }
+    span.j-js-update-indicator.j-update-count.zero.j-navbadge-count.j-ui-elem {
+        background: transparent;
+    }
+    .j-update-count.zero{
+        background-color: transparent;
+    }
+    #j-compact-header #j-links .j-globalNav {
+        margin: -16px -4px 0;
+    }
+    .j-globalNav .j-nav-more, #j-links .j-nav-more, #j-satNav .j-nav-more, #j-globalNav .j-nav-more{
+        display: none;
+    }
+    #j-links .j-globalNav li.j-globalNav-li#j-nav-search-li {
+        margin-left: 6px;
+    }
+    #j-links .j-globalNav li.j-globalNav-li {
+        margin-right: 10px;
+    }
+    #j-links .j-ui-elem{
+        background-image: none;
+    }
+    #j-satNav-inbox.j-satNav-inbox span.fiftyplus {
+        padding-left: 3px;
+    }
+    #j-satNav-inbox.j-satNav-inbox span.zero[data-count] {
+        line-height: 14px;
+        height: 40px;
+        display: table;
+        margin-top: -10px;
+        padding: 16px 20px 0 20px;
+        margin-right: -22px;
+        background: url(../images/JiveWorks/inbox.svg);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    #j-satNav-inbox.j-satNav-inbox span.j-navbadge-count.fiftyplus[data-count] {
+        padding-left: 3px;
+        margin-left: 1px;
+        padding: 4px 24px 4px 14px;
+        background: url(../images/JiveWorks/inbox2.svg);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        height: 34px;
+        line-height: 36px;
+    }
+    #j-satNav-inbox.j-satNav-inbox span.j-navbadge-count[data-count] {
+        line-height: 42px;
+        height: 40px;
+        margin-top: -6px;
+        margin-left: 4px;
+        padding: 0px 20px 0 15px;
+        background: url(../images/JiveWorks/inbox.svg);
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+    }
+    li#j-nav-search-li {
+        margin: 6px 30px 0 12px;
+    }
+    li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container {
+        margin: -6px -4px;
+    }
+    span.jive-icon-glyph.icon-pencil2.j-create-icon {
+        width: 26.5px;
+        height: 29px;
+        color: transparent;
+        background: url(../images/JiveWorks/create-icn.svg);
+        background-size: cover;
+    }
+    html body.j-header-mode-custom.fixed-bar #j-compact-header,
+    html body.fixed-bar #j-compact-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
+    }
+    html body.j-header-mode-custom #j-compact-header,
+    html body #j-compact-header{
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.5);
+        background-image: url(../images/JiveWorks/backround-nav@3x.png);
+        z-index: 2;
+    }
+    header div#j-cust-head{
+        opacity: 1;
+    }
+    #j-nav-search-li #j-nav-search span {
+        width: 33px;
+        height: 29px;
+        padding: 0;
+        color: transparent;
+        background: url(../images/JiveWorks/search-icn.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    #j-satNav-inbox.j-satNav-inbox > span.j-navbadge-inbox, #j-links #j-satNav-inbox.j-satNav-inbox > span.j-navbadge-inbox{
+        /*height: 25px;*/
+        /*margin-top: 3px;*/
+        padding: 4px 20px;
+        /*border-radius: 80px;*/
+        /*border: solid 2px #ffffff;*/
+        background: transparent;
+
+        /*height: 40px;*/
+        /*margin-top: 1px;*/
+        /*padding: 0px 20px 3px 18px;*/
+        /*background: url(../images/JiveWorks/inbox.svg);*/
+        /*background-repeat: no-repeat;*/
+        /*background-position: 0 2px;*/
+    }
+    a#j-satNav .jive-avatar {
+        width: 31px;
+        height: 31px;
+        margin-top: -4px;
+        border: solid 2px #ffffff;
+        border-radius: 50%;
+        background-color: #8c8c8c;
+    }
+
+    #j-satNav-inbox.j-satNav-inbox span.j-navbadge-inbox .j-satNav-inbox-icon:before{
+        display: none;
+    }
+    .j-satNav-inbox:hover span.j-navbadge-count, .j-satNav-inbox:focus span.j-navbadge-count, #j-satNav-wrap a#j-satNav:hover, #j-satNav-wrap a#j-satNav:focus {
+        box-shadow: none;
+    }
+    html .j-navbadge-inbox .j-navbadge-count {
+        display: inline-block;
+        padding: 0;
+        margin: 0 auto;
+        margin-top: 6px;
+        min-width: 16px;
+        background-color: transparent;
+        box-shadow: none;
+        text-shadow: none;
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 15px;
+    }
+
+    #j-home-side-nav .j-update-count {
+        top: 5px;
+	    padding: 3px 8px;
+    }
+
+    .j-globalNav li.j-globalNav-li{
+        line-height: 28px;
+        box-sizing: border-box;
+    }
+    .j-globalNav li.j-globalNav-li a.j-globalNavLink span.nav-link {
+        max-width: 100%;
+        text-overflow: inherit;
+        text-shadow: none;
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 15px;
+    }
+    body.j-body-welcome.j-body-home.j-header-mode-custom.j-responsive-md.j-search-visor-open{
+        width: 100% !important;
+    }
+    #j-search-visor {
+        top: 100px !important;
+        right: 0 !important;
+    }
+    ul#j-satNav a {
+        font-size: 16px;
+    }
+    #j-header a.j-globalNavLink:hover,
+    #j-header a.j-globalNavLink:focus,
+    #j-compact-header a.j-globalNavLink:hover,
+    #j-compact-header a.j-globalNavLink:focus {
+        background-image: none;
+    }
+    .j-pop .a11y-boundary:first-child + .j-actions, .j-pop .j-actions:first-child, .j-pop .j-pop-row{
+        background: none;
+    }
+    /* todo - why this is there? */
+    .close {
+        /*background: none;*/
+    }
+    .j-pop > div.j-pop-main{
+        border: none;
+        border-radius: 0;
+    }
+    .j-pop .j-menu li > span.jive-icon-glyph {
+        font-family: 'jiveglyphs';
+    }
+    .j-pop .j-menu li > a, .j-pop .j-menu li > span, .j-pop .j-menu li a.j-follow-button{
+        border-bottom: 0;
+        border-top: 0;
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .j-pop .pointer{
+        background: transparent url(../images/j8-ui-sprite.png) no-repeat -100% -100%;
+        background-position: -115px -373px;
+        width: 17px;
+        height: 11px;
+        top: -9px;
+    }
+    .j-tileModal-search input, #j-spotlight-search input{
+        font-family: "AvenirNextLTW01-Regular";
+    }
+    a#j-satNav.active span.nav-link.j-ui-elem{
+        background-image: none;
+    }
+    a#j-satNav:hover span.nav-link.j-ui-elem{
+        background-position: 99% -911px !important;
+    }
+    #j-satNav li.register a:hover {
+        text-decoration: none;
+        background-color: #021677;
+    }
+    a#jive-nav-link-reg {
+        border-radius: 2px;
+        background-color: #0088e1;
+        padding: 7px 22px 6px 22px;
+        text-decoration: none;
+    }
+    #j-satNav li.register{
+        border-left: none;
+    }
+    a#j-satNav {
+        background-image: none;
+    }
+    #j-satNav li.login {
+        float: right;
+    }
+    a#navCreate {
+        background-image: none;
+    }
+    #navCreate.active span.nav-link.j-ui-elem {
+         background-position: 99% -911px !important;
+         background-image: url(../images/steelhead/j-ui-sprite.png);
+     }
+    a#navCreatev.active span.nav-link.j-ui-elem,
+    a#navCreate:hover span.nav-link.j-ui-elem,
+    a#navCreate:active span.nav-link.j-ui-elem{
+        background-position: 99% -911px !important;
+    }
+    a#navCreate:hover span.nav-link.j-ui-elem {
+        background-position: 99% -911px !important;
+    }
+
+    div#j-satNav-menu,div#menuCreate {
+        font-family: "AvenirNextLTW01-Regular";
+    }
+    .j-pop .j-menu li a:active, .j-pop .j-menu li a:focus, .j-pop .j-menu li a.j-selected, .j-pop .j-menu li.j-selected a{
+        background: #f6f6f6;
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        text-shadow: none;
+        color: #0088e1;
+        border: none;
+        margin: 0;
+        border: none;
+        text-decoration: underline;
+
+    }
+
+    a, a:visited, a:link, .j-impact-list .j-metric .j-count{
+        color: #0088e1;
+    }
+
+
+    /*footer*/
+
+    .j-footer-login-page{
+      visibility: hidden;
+    }
+
+
+    footer#j-footer a {
+        color: #ffffff;
+        font-family: "Avenir Next W01 Thin";
+    }
+    #j-footer {
+        font-size: 14.36px;
+        color: #ffffff;
+        background: url(../images/gradient.png);
+        position: absolute;
+        padding: 0 20px;
+        margin: auto auto;
+        left: 0;
+        right: 0;
+        height: 86px;
+        background-size: cover;
+    }
+    #j-footer #j-footer-poweredBy {
+        float: left;
+        margin: 42px 0 0 100px;
+    }
+    #j-footer #j-footer-poweredBy img{
+        display: none;
+    }
+    #j-footer .j-footer-nav,.j-footer-nav .font-color-meta {
+        display: none;
+    }
+    div#footer-socials {
+        float: RIGHT;
+        margin: 34px 0 0 0;
+        width: 300px;
+    }
+    div#footer-socials a {
+        display: inline-block;
+        width: 35px;
+        height: 26px;
+    }
+    #footer-socials span:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        filter: alpha(opacity=60);
+        -moz-opacity: 0.6;
+        -khtml-opacity: 0.6;
+        opacity: 0.6;
+    }
+    #footer-socials span {
+        position: relative;
+        width: 26px;
+        height: 26px;
+        background: url(../images/social-link-sprite.png);
+        padding: 0 26px 13px 0;
+        background-repeat: no-repeat;
+    }
+    #footer-socials span.footer-gplus {
+        background-position: -35px 0;
+    }
+    #footer-socials span.footer-fb {
+        background-position: -70px 0;
+    }
+    #footer-socials span.footer-linkedin {
+        background-position: -105px 0;
+    }
+
+    /*widgets*/
+    /*the very top widget-greeting*/
+    .j-body-welcome.j-body-home .jive-widget:first-child {
+        margin-bottom: 36px;
+        margin-top: 20px;
+    }
+    .j-body-welcome.j-body-home .jive-widget {
+        margin-bottom: 5px;
+    }
+    .j-body-welcome.j-body-home .j-js-footer-wrap {
+        padding-top: 40px;
+    }
+    /*places*/
+    .j-placeHeaderInner, .j-placeTitle a.j-placeName {
+        font-family: "AvenirNextLTW01-Regular";
+    }
+
+    /*transitions*/
+    #j-globalNav-bg,
+    #j-compact-header #j-links,
+    .j-globalNav li.j-globalNav-li{
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+        -webkit-transition: background 0s ease;
+        -moz-transition: background 0s ease;
+        -o-transition: background 0s ease;
+        transition: background 0s ease;
+        background-image: none;
+    }
+    /*hide overview*/
+    li#jive-nav-link-dashboard {
+        display: none;
+    }
+    #j-header, #j-compact-header {
+        height: 100px;
+    }
+    #j-search-visor{
+        z-index: 21;
+    }
+    .j-people-list li.user-autocomplete-item.j-selected a .font-color-meta-light {
+         color: #333;
+    }
+
+    #j-footer-poweredBy .jive-icon-glyph {
+        position: relative;
+        top: 5px;
+        font-size: 18px;
+        margin-left: 6px;
+    }
+    .jive-icon-glyph.icon-jivelogo span{
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 10.5pt;
+        vertical-align: super;
+        padding-right: 5px;
+    }
+    span[class*="icon-"]:after,
+    a > span[class*="icon-"]:after{
+        display: inline-block;
+        text-decoration: none;
+    }
+    .icon-jivelogo:after {
+        content: "\e600";
+    }
+    #j-footer a {
+        font-size: 13.36px;
+    }
+span.replaced-inbox-counter {
+    position: absolute;
+    padding: 1px 7px 2px;
+    background-position: 50% -497px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: center;
+    box-shadow: none;
+    text-shadow: none;
+    height: 18px;
+    padding-top: 3px;
+    border-radius: 20px;
+    padding-bottom: 4px;
+    font-family: "Avenir Next W01 Thin";
+    font-size: 15px;
+    color: white;
+    line-height: 18px;
+    right: auto;
+    vertical-align: middle;
+    left: -40px;
+    top: 6px;
+}
+#j-footer-poweredBy .j-copyright, #j-footer-poweredBy .j-powered-by, #j-footer-poweredBy .j-powered-by:hover{
+    color: #FFFFFF;
+    margin-left: 0;
+    font-size: 13.36px;
+}
+.j-body-home .j-contained {
+    background-color: transparent;
+}
+html *#j-cust-head *#logo img{
+    width: 149px;
+    height: 30px;
+    margin-top: 21px;
+    object-fit: contain;
+}
+#j-onb-nav-progress .j-index-holder .j-index{
+    min-width: 42px;
+}
+/*Global restyling : finish*/
+
+/*Custom header*/
+#ext-nav {
+    background: #1e1e1e
+}
+
+#ext-nav li {
+    float: left;
+    list-style: none;
+    border-right: solid 1px #323232;
+}
+
+#ext-nav li#contact, #j-cust-head #ext-nav li.menu-item {
+    float: right;
+    border-left: solid 1px #3e3e3e;
+    border-right: none
+}
+
+#ext-nav li a {
+    border-right: 1px solid #323232;
+    color: #7D7D7D;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: AvenirNextLTW01-Regular, "Avenir-Regular", helvetica, sans-serif;
+    font-size: .8em;
+    padding: .5em;
+    float: left;
+}
+
+#ext-nav li a:hover {
+    background-color: #2e2e2e;
+    text-decoration: none;
+}
+
+#logo {
+    display: inline-block;
+    padding: 15px 25px 0;
+}
+
+*#j-cust-head *#ext-nav li {
+    font-family: "AvenirNextLTW01-Regular";
+    border-right: none;
+    position: relative;
+    height: 32px;
+    -webkit-font-smoothing: auto;
+}
+
+*#j-cust-head *#ext-nav li a {
+    -webkit-transition: color .1s linear;
+    -moz-transition: color .1s linear;
+    transition: color .1s linear;
+    color: #ddd;
+    text-transform: uppercase;
+    font-family: AvenirNextLTW01-Regular, "Avenir-Regular", helvetica, sans-serif;
+    float: left;
+    height: 14px;
+    padding: .7em 1em;
+    font-size: 13px;
+    border-right: 1px solid #323232;
+}
+
+a.contact {
+    border-left: 1px solid rgb(50, 50, 50);
+}
+
+*#j-cust-head *#ext-nav li a:hover {
+    color: white;
+}
+.j-simple-logo.js-logo{
+    display: none;
+}
+.j-cust-head #ext-nav li a {
+    overflow: hidden;
+    display: inline-block;
+}
+.j-pipe-mobile{
+    display: none;
+}
+#j-footer br{
+    display: none;
+ }
+.jive-icon-glyph.icon-jivelogo{
+    display: none;
+}
+#j-footer #j-footer-poweredBy .j-powered-by span:after {
+    font-family: 'jiveglyphs';
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+    content: '\e600';
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    color: #FFFFFF;
+    vertical-align: middle;
+    margin-left: 6px;
+}
+span.j-pipe {
+    font-weight: bold;
+}
+.j-body-place #jive-body .j-page-header {
+    margin: 23px 0 20px;
+}
+body.j-body-welcome .j-home-welcome-responsive .j-home-welcome-message p b{
+    color: #592cad;
+    font-family: "Avenir Next LT W01 Bold";
+    font-weight: normal;
+}
+html .j-contained #jive-widget-container{
+    padding: 0;
+}
+
+.j-endorse-title-text.admin {
+    max-width: initial;
+}
+/*sticky header*/
+div#j-cust-head ul {
+    position: fixed;
+    width: 100%;
+    z-index: 21;
+}
+#j-cust-head #logo{
+  top: 32px;
+  -webkit-transition: top 0.5s ease-in-out;
+  -moz-transition: top 0.5s ease-in-out;
+  transition: top 0.5s ease-in-out;
+}
+.expanded #j-cust-head #logo{
+  top: 312px;
+}
+.fixed-bar.expanded div#j-cust-head ul{
+    top: 0;
+}
+
+.fixed-bar.expanded #j-header, .fixed-bar.expanded #j-compact-header{
+    height: 358px;
+}
+
+.fixed-bar.expanded #j-header, .fixed-bar.expanded #j-compact-header{
+    height: 344px;
+}
+html body.fixed-bar.expanded header *#j-cust-head *#logo img {
+    margin-top: 20px;
+}
+.fixed-bar.expanded header #j-globalNav-bg {
+    padding-top: 20px;
+}
+.j-body-welcome.j-body-home #j-main-wrapper,
+.jive-body-formpage-login #j-main-wrapper,
+.jive-body-formpage-register #j-main-wrapper{
+    margin-top: 0;
+}
+.jive-body-formpage-login #j-main-wrapper div#regular-auth-login-block ,
+.jive-body-formpage-register #j-main-wrapper div#regular-auth-login-block {
+    margin-top: 130px;
+}
+#j-main-wrapper{
+    margin-top: 100px;
+}
+
+.fixed-bar.expanded #j-globalNav-bg {
+    padding-top: 26px;
+}
+.fixed-bar.expanded #j-cust-head #logo{
+    top: 280px;
+}
+.expanded #j-header, .expanded #j-compact-header {
+    height: 380px;
+    background-position: right 6px;
+}
+#j-globalNav-bg{
+  padding-top: 54px;
+}
+.jive-modal-content.profile-data .profile-tile.j-extended-profile ul li {
+    display: none;
+}
+.mceLayout tr.mceFirst .mceToolbar.mceLeft.mceFirst.mceLast #wysiwygtext_toolbargroup.affix {
+    padding-top: 100px;
+}
+header#j-compact-header .j-custom-link {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+html body.fixed-bar.expanded *#j-cust-head *#logo img {
+    margin-top: 26px;
+}
+
+.j-home-welcome #jive-alert {
+    margin: 0 0 30px 0;
+}
+
+body.expanded.fixed-bar #j-cust-head .trials-buttons-wrapper {
+    margin: 52px 0px -30px 0px;
+    margin-top: 52px;
+}
+header#j-compact-header .j-pop.js-pop.popover {
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+.j-small-view + span.belowArrow.pointer {
+    left: 123px !important;
+}
+
+.j-custom-link span.nav-link.j-ui-elem:after {
+    display: inline-block;
+    position: static;
+    text-decoration: none;
+    content: "\e3b6";
+    margin: -1px 0 0 2px;
+    vertical-align: middle;
+    font-size: 14px;
+    font-family: 'jiveglyphs';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+#j-links .j-globalNav li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container:before{
+    height: 74px;
+}
+#j-links .j-globalNav li.j-globalNav-li#j-nav-search-li:before{
+    width: 60px;
+    height: 69px;
+    margin-top: -20px;
+}
+#j-links .j-globalNav li.j-globalNav-li.j-nav-create.j-nav-user.j-satNav-user-menu:before{
+    width: 62px;
+    margin-left: 0;
+}
+#j-links .j-globalNav li.j-globalNav-li.j-nav-create.j-nav-user.js-satellite-nav-container.j-globalNav-li.js-satellite-nav-container:hover:before {
+    width: 80px;
+    margin-left: -14px;
+}
+#j-links .j-globalNav li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container:before{
+    width: 50px;
+    margin-left: -2px;
+}
+#j-links .j-globalNav li.j-globalNav-li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 68px;
+    margin-top: -13px;
+    background-color: transparent;
+    z-index: -1;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+    width: 80px;
+    margin-left: -14px;
+}
+
+
+.j-globalNav-li.j-custom-link.j-ui-elem:before{
+    content: '';
+    display: block;
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 86px;
+    margin-top: -40px;
+    background-color: transparent;
+    z-index: -1;
+    cursor: pointer;
+    -webkit-transition: background-color 0.3s ease;
+    -moz-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+.j-globalNav-li.j-custom-link.j-ui-elem:hover:before,
+.j-globalNav > li.j-globalNav-li .j-globalNavLink.active:before,
+#j-links .j-globalNav li.j-globalNav-li:hover:before,
+#j-links .j-globalNav li.j-globalNav-li.active:before{
+    background-color: rgba(255, 255, 255, 0.14);
+}
+
+.j-globalNav > li.j-globalNav-li .j-globalNavLink.active {
+    background-image: none;
+}
+.j-menu li, .j-pop .j-menu li{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    transition: none;
+}
+/*postfix margin on body right if browser bug*/
+body.j-search-visor-open:before {
+    content: '';
+    display: block;
+    width: 17px;
+    background: rgba(0, 0, 0, 0.27);
+    height: 70px;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    top: 30px;
+}
+html body.j-header-mode-custom.j-search-visor-open #j-compact-header, html body #j-compact-header {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.guest #j-links .j-globalNav li.j-globalNav-li:before{
+    display: none;
+}
+html body.jive-body-error header#j-compact-header,
+html body.jive-body-formpage-terms header#j-compact-header{
+    top: 0;
+}
+html body.jive-body-formpage-register.fixed-bar header#j-compact-header{
+    position: fixed;
+}
+html body.jive-body-formpage-register header#j-compact-header{
+    position: relative;
+}
+/*MEDIA*/
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+    a#logo {
+        background: url(../images/JiveWorks/retina-logo.svg);
+        width: 149px;
+        height: 30px;
+        margin-top: 21px;
+        object-fit: contain;
+    }
+    html *#j-cust-head *#logo img{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    #j-compact-header #j-links {
+        margin: 7px 0 0 0;
+    }
+    #j-compact-header #j-links .j-globalNav {
+        margin: -7px -22px 0;
+    }
+    #j-links .j-globalNav-li.j-nav-create .j-globalNavLink span.nav-link {
+        padding: 7px 0 0 20px;
+    }
+    .j-tileModal-search, #j-spotlight-search{
+        /*width: 115px;*/
+    }
+    .j-tileModal-search input, #j-spotlight-search input{
+        /*width: 85px;*/
+    }
+    #j-globalNav > li.j-globalNav-li a{
+        padding: 9px 16px 10px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    #j-globalNav-bg {
+        /*margin: 0 0 0 -50px;*/
+    }
+}
+
+@media screen and (max-width: 1202px) {
+    nav#j-globalNav-bg:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        top: 86px;
+        left: 0;
+        background: rgba(255, 255, 255, 0.17);
+    }
+    .mceLayout tr.mceFirst .mceToolbar.mceLeft.mceFirst.mceLast #wysiwygtext_toolbargroup.affix {
+        padding-top: 122px;
+    }
+
+    html #slider-inject .blue-left-content{
+        top: -38px;
+    }
+
+    html body.fixed-bar.expanded header *#j-cust-head *#logo img{
+        margin-top: 30px;
+    }
+
+    #j-globalNav > li.j-globalNav-li a {
+        padding: 9px 10px 10px;
+    }
+
+    ul#j-globalNav {
+        position: absolute;
+        left: 14px;
+        top: 82px;
+    }
+
+    .expanded #j-header, .expanded #j-compact-header {
+        height: 399px;
+    }
+
+    #j-header, #j-compact-header {
+        height: 122px;
+    }
+
+    #j-main-wrapper{
+        margin-top: 116px;
+    }
+
+    html *#j-cust-head *#logo img, html body.fixed-bar *#j-cust-head *#logo img {
+        margin-top: 17px;
+    }
+    .expanded.fixed-bar #j-compact-header #j-links .j-globalNav {
+        margin: -16px -6px 0;
+    }
+    #j-links .j-globalNav li.j-globalNav-li:before{
+        height: 60px;
+    }
+    #j-links .j-globalNav li.j-globalNav-li#j-nav-search-li:before {
+        height: 61px;
+        margin-top: -20px;
+    }
+    #j-links .j-globalNav li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container:before {
+        height: 66px;
+    }
+    #j-compact-header #j-links .j-globalNav {
+        margin: -22px -4px 0;
+    }
+    #j-links .j-globalNav li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container {
+        margin-right: 16px;
+    }
+    #j-links #j-satNav .jive-avatar {
+        margin-right: 10px;
+    }
+
+    .fixed-bar.expanded #j-header, .fixed-bar.expanded #j-compact-header {
+        height: 368px;
+    }
+
+    .fixed-bar.expanded #j-cust-head #logo {
+        top: 270px;
+    }
+    .fixed-bar.expanded ul#j-globalNav {
+        top: 52px;
+    }
+
+    .fixed-bar.expanded nav#j-globalNav-bg:before {
+        top: 58px;
+    }
+
+    .expanded.fixed-bar #j-header, .expanded.fixed-bar #j-compact-header {
+        height: 370px;
+    }
+    .j-globalNav-li.j-custom-link.j-ui-elem:before {
+        height: 35px;
+        margin-top: 5px;
+    }
+    .expanded.j-globalNav-li.j-custom-link.j-ui-elem:before {
+        height: 31px;
+        margin-top: 7px;
+    }
+    .expanded.fixed-bar .j-globalNav-li.j-custom-link.j-ui-elem:before{
+        height: 32px;
+        margin-top: 7px;
+    }
+
+    .j-globalNav-li.j-custom-link.j-ui-elem:first-child:before {
+        width: 123%;
+        margin-left: -23%;
+    }
+}
+
+@media screen and (max-width: 1285px) {
+    .j-globalNav li.j-globalNav-li a.j-globalNavLink span.nav-link{
+        font-size: 14px;
+    }
+    .j-globalNav li.j-globalNav-li a.j-globalNavLink span.nav-link .icon-search{
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 780px) {
+    *#j-cust-head *#ext-nav li a {
+        padding: .9em 1em;
+        font-size: 10px;
+        height: 10px;
+    }
+    html *#j-cust-head *#ext-nav li{
+        height: 28px;
+    }
+    #j-cust-head .off-canvas .trials-buttons-wrapper a {
+        margin: 34px 10px -26px 10px;
+    }
+}
+/*Mobile view*/
+@media only screen and (max-width: 40em){
+    #j-main {
+        padding: 0;
+        background: #ececec !important;
+    }
+    body.j-body-welcome .j-home-welcome-responsive .j-home-welcome-message p {
+        line-height: 20px;
+        font-size: 13.5pt;
+        padding: 8px 15px 0 15px;
+        font-family: "AvenirNextLTW01-Regular";
+        color: #6F6F6F;
+    }
+    /*header*/
+    #j-globalNav #mobile-menu > a{
+        background: none;
+    }
+    #j-globalNav-bg{
+        margin: auto;
+        padding: 0;
+    }
+    .j-simple-logo.js-logo{
+        display: block;
+    }
+    .j-simple-logo img {
+        width: 98px;
+        height: 21px;
+        max-width: 98px;
+        max-height: 21px;
+        margin-top: 6px;
+    }
+    .jive-body-formpage-login #j-main-wrapper div#regular-auth-login-block ,
+    .jive-body-formpage-register #j-main-wrapper div#regular-auth-login-block {
+        margin-top: inherit;
+    }
+    /*footer*/
+    #j-footer span[class*="icon-"]:before,
+    #j-footer a > span[class*="icon-"]:before{
+        display: none;
+    }
+    #j-footer-poweredBy .jive-icon-glyph {
+        position: relative;
+        top: 5px;
+        font-size: 18px;
+        float: right;
+        margin: -21px 0;
+    }
+    #j-footer .j-pipe {
+        display: none !important;
+    }
+    .links-wrapper{
+        width: 250px;
+        padding-right: 60px;
+    }
+    .jive-icon-glyph.icon-jivelogo{
+        display: block;
+    }
+    #j-footer {
+        display: block;
+        height: 50px;
+        padding: 20px;
+        position: relative;
+        font-size: .9em;
+    }
+    #j-footer #j-footer-poweredBy a{
+        color: #FFFFFF;
+        display: inline;
+        width: auto;
+        margin: 0 0 3px 0px;
+        font-family: "AvenirNextLTW01-Regular";
+        font-size: 10.5pt;
+    }
+    #j-footer #j-footer-poweredBy:before{
+        display: none;
+    }
+    #j-footer #j-footer-poweredBy {
+        float: left;
+        margin: 12px auto;
+    }
+    #j-footer #j-footer-poweredBy img{
+        display: none;
+    }
+    #j-footer .j-footer-nav,.j-footer-nav .font-color-meta {
+        display: none;
+    }
+    div#footer-socials {
+        float: RIGHT;
+        margin: 34px 0 0 0;
+        width: 300px;
+    }
+    div#footer-socials a {
+        display: inline-block;
+        width: 35px;
+        height: 26px;
+    }
+    #footer-socials{
+        display: none;
+    }
+    .icon-jivelogo:after {
+        font-size: 16px;
+    }
+    span.jive-icon-glyph.icon-jivelogo{
+        position: absolute;
+        right: 20px;
+        top: 51px;
+    }
+    #footer-socials span:hover {
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+        filter: alpha(opacity=60);
+        -moz-opacity: 0.6;
+        -khtml-opacity: 0.6;
+        opacity: 0.6;
+    }
+    #j-footer .j-powered-by{
+        display: none !important;
+    }
+    #j-footer .j-pipe-mobile{
+        display: inline !important;
+        padding: 0 5px;
+    }
+    #j-footer .j-pipe {
+        display: none !important;
+    }
+    #j-footer br{
+        display: block;
+    }
+    #footer-socials span {
+        position: relative;
+        width: 26px;
+        height: 26px;
+        background: url(..images/social-link-sprite.png);
+        padding: 0 26px 13px 0;
+        background-repeat: no-repeat;
+    }
+    #footer-socials span.footer-gplus {
+        background-position: -35px 0;
+    }
+    #footer-socials span.footer-fb {
+        background-position: -70px 0;
+    }
+    #footer-socials span.footer-linkedin {
+        background-position: -105px 0;
+    }
+
+    .j-body-home .j-tileType-custom_view .j-tile-body{
+        padding: 5px 0;
+    }
+
+    /*mobile page*/
+
+    .j-body-welcome.j-responsive-sm .contentList .jive-icon-med,
+    .j-body-welcome.j-responsive-md .contentList .jive-icon-med{
+        display: none;
+    }
+
+    .j-body-welcome.j-responsive-sm .contentList .listItem,
+    .j-body-welcome.j-responsive-md .contentList .listItem{
+        padding-left: 20px;
+    }
+    .j-body-welcome.j-responsive-sm .contentList .linkText,
+    .j-body-welcome.j-responsive-md .contentList .linkText{
+        color: #72787c;
+        text-decoration: none;
+        font-family: "AvenirNextLTW01-Regular";
+        font-kerning: auto;
+        font-size: 14px;
+        font-stretch: normal;
+        font-style: normal;
+        font-variant: normal;
+        font-variant-ligatures: normal;
+        font-weight: normal;
+        line-height: normal;
+    }
+    .j-body-welcome.j-responsive-sm .j-tile-header,
+    .j-body-welcome.j-responsive-md .j-tile-header{
+        border-radius: 0;
+    }
+    .j-body-welcome.j-responsive-sm .j-tile-header > h4,
+    .j-body-welcome.j-responsive-md .j-tile-header > h4{
+        color: #1c9efc;
+        font-family:"AvenirNextLTW01-Medium";
+        font-size: 20px;
+        background-color: #eaeaea;
+        text-transform: capitalize;
+        padding-left: 20px;
+        border-radius: 0;
+    }
+
+    .j-body-welcome.j-responsive-sm .js-tile-body .j-tile-body,
+    .j-body-welcome.j-responsive-md .js-tile-body .j-tile-body{
+        padding: 0;
+    }
+
+    /*Slider Custom*/
+
+    .j-body-welcome.j-responsive-sm .j-slideInfo .j-carousel-slideinfo-bg,
+    .j-body-welcome.j-responsive-md .j-slideInfo .j-carousel-slideinfo-bg{
+        display: none;
+    }
+
+    .j-slideInfo{
+        font-family: "AvenirNextLTW01-Regular";
+    }
+
+    .j-column-responsive .j-cSlides .j-slide-item .j-slideInfo h3 {
+        background: rgba(90, 50, 170, 0.901961) url(..images/arrow.png) no-repeat;
+        border-top: 15px solid rgb(37, 42, 87);
+        color: rgb(255, 255, 255);
+        cursor: auto;
+        display: inline-block;
+        font-size: 18px;
+        font-weight: normal;
+        text-decoration: none;
+        background-position: calc(100% - 25px) 50%;
+        text-transform: uppercase;
+        font-family: "AvenirNextLTW01-Regular";
+        margin: -5px 0 0;
+        padding: 17px 50px 16px 30px;
+        z-index: 3;
+        /* custom slide soy not override fix (remove when carousel.soy  override will work in  /welcome page */
+        top: 115px;
+        position: absolute;
+    }
+
+    .j-column-responsive .j-cSlides .j-slide-item .j-slideInfo{
+        padding: 15px 43px 10px 40px;
+        top:0
+    }
+
+    .j-column-responsive .j-cSlides .j-slide-item .j-slideInfo .j-slide-caption{
+        display: table-cell;
+        vertical-align: middle;
+        background-color: rgba(0, 136, 225, 0.901961);
+        overflow: visible;
+        white-space: normal;
+        padding: 10px 20px 20px 20px;
+        margin: 0px;
+        font-size: 18px;
+        max-height: none;
+        font-family: "AvenirNextLTW01-Regular";
+        color: white;
+        height: 110px;
+        border-bottom: 22px solid rgba(0, 136, 225, 0.901961);
+        padding-bottom: 0;
+    }
+    .j-cSlides.js-main-slide.clearfix h3 a.j-slideTextLink{
+        margin-left: -10px;
+    }
+    .j-carousel-counter{
+        display: none;
+     }
+    .j-place-column.j-column-responsive .j-icon-list{
+        padding: 12px 0;
+    }
+
+    /*MOBILE HEADER*/
+    ul#j-globalNav {
+        left: 0;
+        top: 0;
+    }
+
+    #j-globalNav > li.j-globalNav-li a {
+        padding: 8px 0 10px;
+    }
+
+    html #j-header-wrap{
+        /*display: block !important;*/
+    }
+
+    #j-satNav:before,
+    #j-links .j-nav-cmenu > a:before{
+        display: none;
+        content: '';
+    }
+
+    #j-links .j-globalNav .j-globalNav-li.j-nav-create .j-globalNavLink img {
+        margin: 8px;
+    }
+
+    #j-links .j-nav-create .j-globalNavLink {
+        padding-top: 12px;
+    }
+
+    #j-links .j-nav-create > a span.nav-link, #j-links .j-nav-user > a span.nav-link{
+        display: inline-block;
+    }
+    .j-globalNav li.j-globalNav-li.mobile-tool,
+    #j-links .j-nav-cmenu > a:before,
+    #j-links #mobile-search > a:before{
+        display: none;
+        content: '';
+    }
+
+    #j-links .j-globalNav li.j-globalNav-li.mobile-tool{
+        position: absolute;
+        right: 0;
+        width: 44px;
+        height: 50px;
+    }
+
+    li#j-nav-search-li,
+    body.j-responsive-sm #j-nav-search-li,
+    body.j-responsive-md #j-nav-search-li{
+        display: inline-block !important;
+        margin: -16px -44px;
+    }
+
+    #j-links .j-globalNav > li.mobile-tool > a, #j-links .j-nav-create > a, #j-links .j-nav-user > a, #j-links #j-satNav {
+        padding: 0;
+    }
+
+    .nav-link .j-create-icon {
+        margin-left: -18px;
+    }
+
+    a#j-nav-search {
+        padding: 0;
+        margin: 12px 20px;
+    }
+
+    #j-spotlight-search.mobile-active:before {
+        right: 22px;
+    }
+
+    body > div.j-pop, body div.j-pop.j-autocomplete{
+        padding: 0 !important;
+    }
+
+    .j-spotlight-find .j-results{
+        padding-top: 1px;
+    }
+
+    #j-compact-header #j-links #navCreate{
+        z-index: 2;
+    }
+
+    .jive-spotlight-search-result.j-menu.j-quick-menu.j-pop-main {
+        margin-top: 72px;
+    }
+
+    html body.j-header-mode-custom #j-compact-header, html body #j-compact-header {
+        background: #2b2b2b;
+    }
+
+    #j-links .j-globalNav li.j-nav-create.j-nav-cmenu.j-globalNav-li.js-create-nav-container {
+        position: absolute;
+        right: 44px;
+    }
+
+    #j-links #j-satNav .jive-avatar{
+        margin-left: 0;
+    }
+
+    #j-links .j-globalNav li.j-globalNav-li:before {
+        display: none;
+    }
+    #j-links .j-globalNav li.j-globalNav-li {
+        margin-right: 15px;
+
+    }
+    #j-links .j-globalNav li.j-globalNav-li * {
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+    #j-satNav-menu.j-pop-main:before {
+        right: 102px;
+    }
+    div#menuCreate {
+        top: 10px;
+        right: -50px;
+    }
+    #menuCreate.j-pop-main:before {
+        right: 48px;
+    }
+    .j-navbadge-count + .j-pop.js-pop.popover {
+        top: 56px !important;
+    }
+
+    #menuCreate ul.j-icon-list li a{
+        white-space: nowrap;
+    }
+
+    nav#j-globalNav-bg:before{
+        background: transparent;
+    }
+    .j-js-update-indicator.visible-xs {
+        display: none !important;
+    }
+
+    #j-main-wrapper {
+        margin-top: 0;
+    }
+
+    .j-body-home.j-header-mode-simple .j-layout-sl .j-column-s, body.j-body-home .j-layout-sl nav.j-column-s, body.jive-body-content .j-layout-ls .j-column-s, body.jive-body-search .j-layout-sl .j-column-s, nav.j-second-nav{
+        bottom: -33px;
+    }
+
+    body.j-body-home .j-layout-sl nav.j-column-s.active, body.jive-body-search .j-layout-sl .j-column-s.active, nav.j-second-nav.active {
+        top: 12px;
+    }
+}
